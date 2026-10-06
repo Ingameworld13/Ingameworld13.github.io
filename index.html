@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INGAME — Software Developer</title>
+  <meta name="description" content="INGAME — Software Developer. Web, Full-stack, Systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="#hero">&lt;ingame/&gt;</a>
+    <nav class="nav__links">
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#engineering" data-i18n="nav.engineering">Engineering</a>
+      <a href="#github" data-i18n="nav.github">GitHub</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button class="lang" id="langToggle" type="button" aria-label="Switch language" data-i18n-attr="aria-label:lang.aria"><span data-lang="en" class="is-active">EN</span><span data-lang="ua">UA</span></button>
+    </nav>
+  </header>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__grid">
+
+      <div class="hero__text">
+        <p class="hero__eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">Open to internship</span></p>
+        <h1 class="hero__name"><span>INGAME</span></h1>
+        <h2 class="hero__role" data-i18n="hero.role">Software Developer</h2>
+        <p class="hero__tags">Web <i>•</i> Full-stack <i>•</i> Systems</p>
+        <p class="hero__tagline" data-i18n-html="hero.tagline">Building software,<br>learning through real projects.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects" data-i18n="hero.cta">Explore Projects</a>
+          <a class="btn btn--ghost" href="https://github.com/Ingameworld13" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Terminal">
+        <div class="terminal__bar">
+          <span class="terminal__btn terminal__btn--r"></span>
+          <span class="terminal__btn terminal__btn--y"></span>
+          <span class="terminal__btn terminal__btn--g"></span>
+          <span class="terminal__title">ingame@devhub: ~</span>
+        </div>
+        <div class="terminal__body" id="terminal" aria-live="off"></div>
+      </div>
+
+    </div>
+    <a class="hero__scroll" href="#projects" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- PROJECTS (main section) -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section__label" data-i18n="proj.label">// 01 — projects</p>
+      <h2 class="section__title" data-i18n="proj.title">Projects</h2>
+
+      <article class="project card reveal">
+        <span class="project__num">01</span>
+        <div class="project__body">
+          <h3 class="project__title">Interactive Developer Portfolio</h3>
+          <p class="project__desc" data-i18n="proj.desc">The site you're looking at: a developer hub with a live terminal, animated sections and an adaptive layout. It demonstrates itself.</p>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS</li><li>JavaScript</li>
+            <li>Responsive UI</li><li>Animations</li><li>Contact form</li>
+          </ul>
+          <div class="project__links">
+            <a class="btn btn--primary" href="https://ingameworld13.github.io" target="_blank" rel="noopener" data-i18n="proj.live">Live site</a>
+            <a class="btn btn--ghost" href="https://github.com/Ingameworld13/Ingameworld13.github.io" target="_blank" rel="noopener" data-i18n="proj.src">Source code</a>
+          </div>
+        </div>
+      </article>
+      <p class="project__more" data-i18n="proj.more">// more projects coming soon</p>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__label" data-i18n="about.label">// 02 — about</p>
+      <h2 class="section__title" data-i18n="about.title">About Me</h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-i18n="about.p1">I'm a Software Engineering student from Kyiv, currently studying at the College of Computer Technologies and Economics of Kyiv Aviation Institute.</p>
+          <p data-i18n="about.p2">I'm interested in web development, software engineering, systems programming and modern AI-assisted development. I learn best by building: every project is a chance to dig into how things really work.</p>
+          <p class="about__goal">
+            <span class="t-prompt">&gt;</span> <span data-i18n="about.goal">Looking for an internship / Junior Software Developer position.</span>
+          </p>
+        </div>
+
+        <aside class="card reveal">
+          <h3 class="card__label" data-i18n="edu.label">Education</h3>
+          <div class="edu">
+            <span class="edu__years">2023 — 2027</span>
+            <h4 class="edu__degree" data-i18n="edu.degree">Software Engineering</h4>
+            <p class="edu__school" data-i18n="edu.school">Kyiv Aviation Institute</p>
+            <p class="edu__sub" data-i18n="edu.sub">College of Computer Technologies and Economics</p>
+          </div>
+          <ul class="facts">
+            <li><span data-i18n="facts.location">Location</span> <em data-i18n="facts.locationV">Kyiv, Ukraine</em></li>
+            <li><span data-i18n="facts.focus">Focus</span> <em>Web / Full-stack / Systems</em></li>
+            <li><span data-i18n="facts.status">Status</span> <b class="t-ok" data-i18n="facts.statusV">Open to internship</b></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section" id="stack">
+    <div class="container">
+      <p class="section__label" data-i18n="stack.label">// 03 — stack</p>
+      <h2 class="section__title" data-i18n="stack.title">Tech Stack</h2>
+      <div class="stack">
+        <div class="stack__map reveal">
+          <div class="layer"><h3>Frontend</h3><div class="chips">
+            <button class="chip" data-tech="HTML5">HTML5</button><button class="chip" data-tech="CSS">CSS</button>
+            <button class="chip" data-tech="JavaScript">JavaScript</button><button class="chip" data-tech="React.js">React.js</button></div></div>
+          <div class="arrow">↓</div>
+          <div class="layer"><h3>Backend</h3><div class="chips">
+            <button class="chip" data-tech=".NET">.NET</button><button class="chip" data-tech="Java">Java</button></div></div>
+          <div class="arrow">↓</div>
+          <div class="layer"><h3 data-i18n="layer.systems">Systems</h3><div class="chips">
+            <button class="chip" data-tech="C/C++">C/C++</button><button class="chip" data-tech="C#">C#</button>
+            <button class="chip" data-tech="CMake">CMake</button><button class="chip" data-tech="Ninja">Ninja</button>
+            <button class="chip" data-tech="MSBuild">MSBuild</button></div></div>
+          <div class="arrow">↓</div>
+          <div class="layer"><h3 data-i18n="layer.db">Database</h3><div class="chips">
+            <button class="chip" data-tech="PostgreSQL">PostgreSQL</button><button class="chip" data-tech="MySQL">MySQL</button></div></div>
+        </div>
+        <aside class="card stack__panel reveal" id="techPanel" aria-live="polite">
+          <h3 class="card__label" data-i18n="panel.label">Details</h3>
+          <p class="panel__hint" data-i18n="panel.hint">Click a technology →</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGINEERING -->
+  <section class="section" id="engineering">
+    <div class="container">
+      <p class="section__label" data-i18n="eng.label">// 04 — engineering</p>
+      <h2 class="section__title" data-i18n="eng.title">Engineering Practices</h2>
+      <div class="eng__grid">
+        <div class="card reveal"><h3 data-i18n="eng.oop.t">Object-Oriented Programming</h3><p data-i18n="eng.oop.d">Modelling code around clear responsibilities and objects.</p></div>
+        <div class="card reveal"><h3>SOLID</h3><p data-i18n="eng.solid.d">Principles for readable, maintainable design.</p></div>
+        <div class="card reveal"><h3 data-i18n="eng.test.t">Unit Testing</h3><p data-i18n="eng.test.d">Checking behaviour in small, repeatable tests.</p></div>
+        <div class="card reveal"><h3>Git / GitHub</h3><p data-i18n="eng.git.d">Version control and collaboration workflow.</p></div>
+        <div class="card reveal"><h3>Postman</h3><p data-i18n="eng.postman.d">Exploring and testing HTTP APIs.</p></div>
+        <div class="card reveal"><h3 data-i18n="eng.build.t">Build Systems</h3><p class="tags"><span>CMake</span><span>Ninja</span><span>MSBuild</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section class="section" id="github">
+    <div class="container">
+      <p class="section__label" data-i18n="gh.label">// 05 — github</p>
+      <h2 class="section__title" data-i18n="gh.title">GitHub</h2>
+      <div class="gh__stats reveal">
+        <div class="gh__stat"><b id="ghStatRepos">…</b><span data-i18n="gh.repos">Repositories</span></div>
+        <div class="gh__stat"><b id="ghStatProjects">…</b><span data-i18n="gh.projects">Public projects</span></div>
+        <div class="gh__stat"><b id="ghStatLangs">…</b><span data-i18n="gh.langs">Languages</span></div>
+        <div class="gh__stat"><b id="ghStatStars">…</b><span data-i18n="gh.stars">Stars</span></div>
+      </div>
+      <a class="btn btn--primary gh__cta" href="https://github.com/Ingameworld13" target="_blank" rel="noopener" data-i18n="gh.cta">View GitHub Profile</a>
+      <h3 class="card__label gh__sub" data-i18n="gh.sub">Latest projects</h3>
+      <div class="gh__list" id="ghList" aria-live="polite"><p class="panel__hint" data-i18n="gh.loading">Loading from GitHub…</p></div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <p class="section__label" data-i18n="road.label">// 06 — roadmap</p>
+      <h2 class="section__title" data-i18n="road.title">Developer Roadmap</h2>
+      <ol class="roadmap">
+        <li class="road card reveal"><span class="road__year">2024</span><ul><li data-i18n="road.fund">Programming fundamentals</li><li>C / C++</li></ul></li>
+        <li class="road card reveal"><span class="road__year">2025</span><ul><li data-i18n="road.oop">OOP</li><li data-i18n="road.db">Databases</li><li>Git</li><li data-i18n="road.web">Web</li></ul></li>
+        <li class="road card reveal"><span class="road__year">2026</span><ul><li>React</li><li>.NET</li><li data-i18n="road.systems">Systems</li></ul></li>
+        <li class="road road--goal card reveal"><span class="road__year">2027</span><ul><li data-i18n="road.intern">Internship</li><li data-i18n="road.junior">Junior Software Developer</li></ul></li>
+      </ol>
+      <div class="focus reveal">
+        <h3 class="card__label" data-i18n="focus.label">Current focus</h3>
+        <div class="focus__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" aria-label="Current focus progress" data-i18n-attr="aria-label:focus.aria"><span style="--w:80%"></span></div>
+        <p class="tags"><span data-i18n="focus.web">Web Development</span><span data-i18n="focus.sys">Systems Programming</span><span data-i18n="focus.se">Software Engineering</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <p class="section__label" data-i18n="ach.label">// 07 — achievements</p>
+      <h2 class="section__title" data-i18n="ach.title">Achievements</h2>
+      <div class="eng__grid">
+        <div class="card reveal"><p class="ach__icon">🏆</p><h3 data-i18n="ach.hack">Hackathon</h3><p data-i18n="ach.hackD">Universal-use software</p><p class="ach__year">2026</p></div>
+        <div class="card reveal"><p class="ach__icon">📜</p><h3>Math Development</h3><p data-i18n="ach.round">Round Table</p><p class="ach__year">2024</p></div>
+        <div class="card reveal"><p class="ach__icon">💻</p><h3 data-i18n="ach.prod">Production Practice</h3><p data-i18n="ach.prodD">Web application development</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI-ASSISTED DEVELOPMENT -->
+  <section class="section" id="ai">
+    <div class="container">
+      <p class="section__label" data-i18n="ai.label">// 08 — ai-assisted development</p>
+      <h2 class="section__title" data-i18n="ai.title">AI-assisted Development</h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-i18n="ai.p">AI is a tool in my workflow, not a replacement for understanding. I use it to move faster and learn more, and I still read, test and own every line that ships.</p>
+          <p class="tags ai__tools"><span>Gemini</span><span>GitHub Copilot</span><span>Claude</span></p>
+        </div>
+        <aside class="card reveal">
+          <h3 class="card__label" data-i18n="ai.used">Used for</h3>
+          <ul class="ai__list">
+            <li data-i18n="ai.l1">Code exploration</li><li data-i18n="ai.l2">Debugging assistance</li><li data-i18n="ai.l3">Documentation</li><li data-i18n="ai.l4">Learning</li><li data-i18n="ai.l5">Prototyping</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section__label" data-i18n="contact.label">// 09 — contact</p>
+      <h2 class="section__title" data-i18n="contact.title">Let's build something</h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p data-i18n="contact.p">Interested in working together, or have an internship in mind? Send a message.</p>
+          <div class="project__links" id="contactLinks">
+            <a class="btn btn--ghost" href="https://github.com/Ingameworld13" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <form class="card contact reveal" id="contactForm" novalidate>
+          <label><span data-i18n="contact.name">Name</span><input type="text" name="name" required autocomplete="name"></label>
+          <label><span>Email</span><input type="email" name="email" required autocomplete="email"></label>
+          <label><span data-i18n="contact.message">Message</span><textarea name="message" rows="5" required></textarea></label>
+          <input type="text" name="_gotcha" class="contact__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary" type="submit" data-i18n="contact.send">Send Message</button>
+          <p class="contact__status" id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
